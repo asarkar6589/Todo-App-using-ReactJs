@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100;0,500;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: #8758ff;
+    color: white;
+}
+
+.home {
+    width: 50%;
+    margin: auto;
+    min-height: 90vh;
+    margin-top: 40px;
+    background-color: #1A1A40;
+    border-radius: 20px;
+    padding: 20px;
+
+    > h1 {
+        text-align: center;
+        margin-top: 65px;
+    }
+
+    .container > h2 {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .container > form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+
+        input, textarea, button {
+            width: 70%;
+            padding: 15px;
+            background: #1A1A40;
+            margin-top: 20px;
+            border: 1px solid #8758ff;
+            outline: none;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        > button {
+            background: #8758ff;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .taskList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    // border: 1px solid yellow;
+    width: 70%;
+    min-height: 70px; // min height means that atleast it's height is 70px but it can will increase automatically if needed.
+    padding: 15px;
+    background-color: #8758ff;
+    border-radius: 15px;
+    margin-bottom: 10px;
+
+    > div {
+        width: 100%;
+    }
+
+    > button {
+        // border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        background: #8758ff;
+        color: white;
+        cursor: pointer;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+}
